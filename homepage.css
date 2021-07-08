@@ -1,0 +1,103 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  body{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:100%;
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    border-right: 5px solid black;
+  }
+  nav ul{
+    list-style-type: none;
+    padding-right: 30px;
+  }
+  nav li{
+      padding-top: 20px;
+  }
+  nav li a:hover{
+    animation: 0.3s menu-line;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  .introduce{
+      width:100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .profile-info{
+    display: flex;
+    flex-direction: column;  
+    
+    width: 500px;
+  }
+  
+  .profile-info ul{
+    list-style-type: none;
+    animation: 1s dashed-border 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .profile-info li{
+    padding: 10px;
+  }
+  
+  .jackKim-icon{
+    margin-right: 0px;
+    animation: spacing-image-and-text 1s;
+    animation-fill-mode: forwards;
+  flex-grow: 2;
+  }
+  
+  @keyframes spacing-image-and-text{
+    from{
+        margin-right: 0px;
+    }
+    to{
+        margin-right: 300px; 
+    }
+  }
+  
+  @keyframes dashed-border{
+    0%{
+        border-left: 0px dashed black;
+    }
+    100%{
+        border-left: 15px dashed black;
+    }  
+  }
+  
+  @keyframes menu-line{
+    from{
+      border-bottom: 0px solid black;
+      
+    }
+    to{
+      border-bottom: 3px solid black;
+    }
+  }

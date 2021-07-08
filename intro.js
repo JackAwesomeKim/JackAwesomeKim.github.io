@@ -1,5 +1,10 @@
 var svgns = "http://www.w3.org/2000/svg";
 
+const intros = document.getElementsByClassName('intro-1');
+const intro = intros[intros.length - 1];
+const introAnchor = intro.getElementsByTagName('a')[0];
+
+
 function addRect() {
     //  window.innerHeight
     //  window.innerWidth
@@ -33,9 +38,7 @@ for (let i = 0; i < welcomeText.length; i++) {
 
 
 function setTextmessage(text) {
-    let intros = document.getElementsByClassName('intro-1');
-    let intro = intros[intros.length - 1];
-    intro.innerText += text;
+    introAnchor.innerText += text;
 }
 
 
@@ -49,4 +52,5 @@ function introRegistration() {
         this.style.backgroundColor = 'white';
         this.style.cursor = 'pointer';
     }
+    introAnchor.href = './homepage.html';
 }
