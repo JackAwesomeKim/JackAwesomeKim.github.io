@@ -1,3 +1,5 @@
+@import url('menu_btn.css');
+
 html, body{
     margin: 0;
     padding: 0;
@@ -88,12 +90,6 @@ a{
   flex-grow: 2;
   }
 
-  .menu-btn{
-      position: absolute;
-      top: 50%;
-      left:100%;
-      animation-fill-mode: forwards;
-  }
 
   
   @keyframes spacing-image-and-text{

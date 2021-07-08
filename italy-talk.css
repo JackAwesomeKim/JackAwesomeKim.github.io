@@ -1,0 +1,142 @@
+.talk-modal{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    background-color: #3a3a47;
+    
+    font-family:'Malgun Gothic';
+  }
+  
+  .message-container{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-right: 35px;  
+    margin-bottom: 15px;
+  }
+  
+  .test{
+    width:100px;
+    height:100px;
+    background-color: brown;
+  }
+  
+  .talk-message{
+    text-align: left;
+    max-width: 320px;
+    background-color: #9BBBD4;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px 12px 10px;
+    margin-top: 25px;
+    word-wrap: break-word;
+    font-size: 13px;
+  
+    /* Position the tooltip */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .talk-message:after{
+    content: " ";
+    position: absolute;
+    top: 25px; /* At the bottom of the tooltip */
+    left: 55px;
+    margin-left: -70px;
+    margin-top: -20px;  
+    border-width: 8px;
+    border-style: solid;  /*#9BBBD4*/
+    border-color: transparent #9BBBD4 transparent transparent;
+    z-index:5;
+  }
+  
+  .talk-modal .nav{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 15px;
+    background-color: #33333d;
+  }
+  
+  .talk-content{
+    padding-top: 20px;
+    width:100%;
+    height: 100%;
+    background-image: url("https://www.formulapassion.it/wp-content/uploads/2021/06/Nazionale-Italiana-Calcio-Logo.jpg");
+    background-size: 100% 100%;
+    overflow-y : auto;
+  }
+  
+  .chatroom-picture{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 100%;
+    background-color: white;
+    background-image: url("https://logoeps.com/wp-content/uploads/2012/06/italy-football-team-logo-vector.jpg");
+    background-size: contain;
+    z-index: 9;
+    
+  }
+  .chatroom-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .chatroom-info span{
+    color: white;
+  }
+  
+  .chatroom-info .icon{
+    width:15px;
+    height: 15px;
+    opacity: 0.5;
+  }
+  
+  .profile-picture{
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 40%;
+    z-index:3;
+  }
+  .profile-picture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 40%;
+  
+  }
+  
+  .profile-picture span{
+    position: absolute;
+    left: 61px;
+    top: -0px;
+    
+    color: white;
+      font-size: 13px;
+  
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #adadad; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

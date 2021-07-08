@@ -1,0 +1,42 @@
+/* tooltip */
+
+.motivation-container .tooltiptext{
+    top: 20%;
+    left: 25%;
+}
+
+.tooltiptext{
+    width: 150px;
+    max-width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    word-wrap: break-word;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 99;
+    top: -15px;
+    left: 95%;
+}
+.player .tooltiptext {
+    visibility: hidden;
+}
+.player .tooltiptext.active {
+    visibility: visible;
+    animation: animacion .3s cubic-bezier(.98,-0.18,.65,1.32);
+}
+  
+.tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -70px;
+    margin-top: -20px;  
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}

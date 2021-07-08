@@ -7,10 +7,13 @@ menu_btn.addEventListener('click', function () {
         navigator.classList.remove('open');
         navigator.classList.add('close');
         menu_list.style.visibility = 'hidden';
+        menu_btn.innerText = '->';
+
     }
     else {
         navigator.classList.remove('close');
         navigator.classList.add('open');
         menu_list.style.visibility = '';
+        menu_btn.innerText = '<-';
     }
 });

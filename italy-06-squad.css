@@ -1,3 +1,5 @@
+@import url('tooltip.css');
+
 
 :root {
     --at-top-position: 75px;
@@ -228,6 +230,7 @@
     height: 80%;
     border: 5px solid black;
     padding: 20px;
+    overflow: scroll;
   }
   .description li{
     margin-bottom: 4px;
@@ -286,41 +289,7 @@
     border-radius: 50%;
   }
   
-  /* tooltip */
-  .player .tooltiptext {
-    visibility: hidden;
-    width: 150px;
-    max-width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    word-wrap: break-word;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    top: -15px;
-    left: 95%;
-  }
-  .player .tooltiptext.active {
-    visibility: visible;
-    animation: animacion .3s cubic-bezier(.98,-0.18,.65,1.32);    
-    -webkit-animation: animacion .3s cubic-bezier(.98,-0.18,.65,1.32);
-  }
   
-  .player .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
-    left: 50%;
-    margin-left: -70px;
-    margin-top: -20px;  
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent black transparent transparent;
-  }
   
   /* animation */
   @keyframes animacion {
