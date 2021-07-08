@@ -50,7 +50,7 @@ function introRegistration() {
     lastIntro.onmouseover = function (e) {
         this.style.color = 'black';
         this.style.backgroundColor = 'white';
-        this.style.cursor = 'pointer';
+        this.style.cursor = 'default';
     }
     introAnchor.href = './homepage.html';
 }

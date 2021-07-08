@@ -1,0 +1,329 @@
+
+:root {
+    --at-top-position: 75px;
+    --amf-top-position: 250px;
+    --mf-top-position: 460px;
+    --smf-top-position: 320px;  
+    --df-top-position: 650px;
+    --gk-top-position: 800px;  
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .bench{
+    display: flex;
+    flex-direction: column;    
+    width: 150px;
+    height: 950px;
+  }
+  
+  .ground-container{
+    position:relative;
+    width: 950px;
+    height: 950px;  
+  }
+  
+  .player img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 100%;
+    object-fit: none;  
+  }
+  
+  .football-ground{
+    width: 950px;
+    height: 950px;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+  }
+  
+  .player{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 5px solid #2245f5;
+    box-shadow: 0 14px 28px rgba(0,0,0,1), 0 10px 10px rgba(0,0,0,0.9);
+    z-index: 1;
+  }
+  .ground-container .player {
+    position: absolute;  
+  }
+  .bench .player {
+    position: relative;  
+    margin-bottom: 20px;
+  }
+  
+  .attacker1{
+    top: var(--at-top-position);
+    left: 44%;
+  }
+  .attacker1 img{
+    object-position: 40% 33%; /* try 20px 10px */ 
+  }
+  
+  .midfielder1{
+    top: var(--smf-top-position);
+    left: 5%;  
+  }
+  .midfielder1 img{
+    object-position: 19% 95%; /* try 20px 10px */ 
+  }
+  
+  
+  .midfielder2{
+    top: var(--mf-top-position);
+    left: 33%;  
+  }
+  .midfielder2 img{
+    object-position: 19% 34%; /* try 20px 10px */ 
+  }
+  
+  
+  .midfielder3{
+    top: var(--amf-top-position);
+    left: 44%;  
+  }
+  .midfielder3 img{
+    object-position: 61% 33%; /* try 20px 10px */ 
+  }
+  .midfielder4{
+    top: var(--mf-top-position);
+    left: 55%;  
+  }
+  .midfielder4 img{
+    object-position: 39.5% 94%; /* try 20px 10px */ 
+  }
+  
+  .midfielder5{
+    top: var(--smf-top-position);
+    left: 83%;  
+  }
+  .midfielder5 img{
+    object-position: 60% 65%; /* try 20px 10px */ 
+  }
+  
+  .defender1{
+    top: var(--df-top-position);
+    left: 13%;  
+  }
+  .defender1 img{
+    object-position: 40% 3%; /* try 20px 10px */ 
+  } 
+  
+  
+  .defender2{
+    top: var(--df-top-position);
+    left: 33%;  
+  }
+  .defender2 img{
+    object-position: 80% 93%; /* try 20px 10px */ 
+  } 
+  
+  .defender3{
+    top: var(--df-top-position);
+    left: 55%;  
+  }
+  .defender3 img{
+    object-position: 80% 1%; /* try 20px 10px */ 
+  }
+  
+  .defender4{
+    top: var(--df-top-position);
+    left: 75%;  
+  }
+  .defender4 img{
+    object-position: 0.5% 93%; /* try 20px 10px */ 
+  }
+  
+  
+  .goalkeeper{
+    top: var(--gk-top-position);
+    left: 44%;  
+  }
+  
+  .goalkeeper img{
+    object-position: -1% 1%; /* try 20px 10px */ 
+  }
+  
+  /* substitutes */
+  .substitutes1 img{
+    object-position: 60% 5%; /* try try 20px 10px */ 
+  
+  }
+  
+  .substitutes2 img{
+    object-position: 39% 63%; /* try 20px 10px */ 
+  
+  }
+  
+  .substitutes3 img{
+    object-position: 0% 33%; /* try 20px 10px */ 
+  }
+  
+  /* toggle */
+  .switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    z-index: 1;
+    
+    top:  15%;
+    left: 90%;
+
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  /* description */
+  .description{
+    height: 80%;
+    border: 5px solid black;
+    padding: 20px;
+  }
+  .description li{
+    margin-bottom: 4px;
+  }
+  
+  .description .emphasis{
+    display: inline-block;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    padding: 1px 5px;
+  }
+  
+  .description .purple{
+      background-color: purple;
+  }
+  .description .roma{
+    background-color: #702B3B;
+  }
+  .description .blue{
+    background-color: blue;
+  }
+  .description .strongblue{
+    background-color: #1500a3;
+  }
+  .description .darkblue{
+    background-color: darkblue;
+  }
+  .description .red{
+    background-color: red;
+  }
+  .description .darkgreen{
+    background-color: #07bc53;
+  }
+  .description .argentina{
+    background-color: #74ACDF;
+  }
+  .description .rust{
+    background-color: #840800;
+  }
+  .description .mustard{
+    background-color: #E5B727;
+  }
+  .description .strawberry{
+    background-color: #FB4C4D;
+  }
+  .description .wood{
+    background-color: #3C2F1C;
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* tooltip */
+  .player .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    max-width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    word-wrap: break-word;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    left: 95%;
+  }
+  .player .tooltiptext.active {
+    visibility: visible;
+    animation: animacion .3s cubic-bezier(.98,-0.18,.65,1.32);    
+    -webkit-animation: animacion .3s cubic-bezier(.98,-0.18,.65,1.32);
+  }
+  
+  .player .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -70px;
+    margin-top: -20px;  
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+  
+  /* animation */
+  @keyframes animacion {
+      0% { opacity: 0;transform:scale(.1) }
+      100% { opacity: 1;transform:scale(1) }
+  }

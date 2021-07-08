@@ -3,10 +3,10 @@ html, body{
     padding: 0;
     height: 100%;
   }
-  a{
+a{
     text-decoration: none;
     color: black;
-  }
+}
   
   
   body{
@@ -16,6 +16,7 @@ html, body{
     height:100%;
   }
   nav{
+    width: 15%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -23,11 +24,24 @@ html, body{
     position: relative;
     height: 100%;
     border-right: 5px solid black;
+    animation-fill-mode: forwards;    
   }
+  nav.open{
+      animation: 0.5s open-nav;
+      animation-fill-mode: forwards;
+
+  }
+  nav.close{
+    animation: 0.5s close-nav;
+    animation-fill-mode: forwards;
+
+}  
   nav ul{
     list-style-type: none;
     padding-right: 30px;
   }
+
+
   nav li{
       padding-top: 20px;
   }
@@ -38,7 +52,7 @@ html, body{
   
   
   .introduce{
-      width:100%;
+    width:100%;
   
     display: flex;
     align-items: center;
@@ -73,6 +87,14 @@ html, body{
     animation-fill-mode: forwards;
   flex-grow: 2;
   }
+
+  .menu-btn{
+      position: absolute;
+      top: 50%;
+      left:100%;
+      animation-fill-mode: forwards;
+  }
+
   
   @keyframes spacing-image-and-text{
     from{
@@ -101,3 +123,20 @@ html, body{
       border-bottom: 3px solid black;
     }
   }
+
+  @keyframes close-nav{
+      from{
+        width:15%;
+      }
+      to{
+          width: 0%;
+      }
+  }
+  @keyframes open-nav{
+    from{
+        width: 0%;
+    }
+    to{
+        width:15%;
+    }
+}
