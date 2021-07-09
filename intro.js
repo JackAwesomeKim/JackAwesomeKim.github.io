@@ -52,5 +52,5 @@ function introRegistration() {
         this.style.backgroundColor = 'white';
         this.style.cursor = 'default';
     }
-    introAnchor.href = './homepage.html';
+    introAnchor.href = './homepage';
 }
