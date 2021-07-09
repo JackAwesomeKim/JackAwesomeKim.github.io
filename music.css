@@ -1,0 +1,337 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .parent-container{
+    display:flex;
+    flex-direction:row;
+    height:100%;
+    width:100%;
+    overflow-y: auto;
+}
+
+  .music-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("https://i.pinimg.com/originals/8d/c7/6e/8dc76e0087a19a78ddd62603ec8b8368.jpg");
+    background-repeat: no-repeat;
+  }
+  
+  .music-container .card{
+    width: 300px;
+    height: 350px;
+    position: absolute;
+  }
+  .card:hover{
+    z-index : 9;
+  }
+  
+  .item1{
+    top: 50px;
+    left:50px;
+    background-color: #e0261d;
+    
+    transform: rotate(20deg);
+  }
+  .item2{
+    top: 100px;
+    left:500px;
+    background-color: #322cdd;
+    
+    transform: rotate(40deg);  
+  }
+  .item3{
+    top: 150px;
+    left:150px;
+    background-color: #75ffda;
+    transform: rotate(-10deg);
+  }
+  .item4{
+    top:200px;
+    left:400px;
+    background-color: #ffda23;
+    transform: rotate(5deg);  
+  }
+  .item5{
+    top:150px;
+    left:650px;
+    background-color: #2335ff;
+    transform: rotate(-10deg);  
+  }
+  .item6{
+    top:20px;
+    left:1000px;
+    background-color: #e0544a;
+    transform: rotate(20deg);  
+  }
+  .item7{
+    top:200px;
+    left:1000px;
+    background-color: #5839d3;
+    transform: rotate(-40deg);  
+  }
+  
+  
+  html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .music-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("https://i.pinimg.com/originals/8d/c7/6e/8dc76e0087a19a78ddd62603ec8b8368.jpg");
+    background-repeat: no-repeat;
+    
+  }
+  
+  
+  /***************************************************/
+  .music-container .card{
+    display: flex;
+    flex-direction: column;
+    
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    
+    border-radius: 20px;
+  }
+  
+  .profile-upper{
+    width:100%;
+    height: 30%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg");
+  background-position: right 0px bottom -40px;
+  border-top-left-radius:  20px;
+  border-top-right-radius: 20px;
+   -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+  .profile-upper .picture{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: pink;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDY7iIStOo3J7i4nbLBOOsYXK2i7vVdHShMQ&usqp=CAU");
+    background-position: right 0px top -20px;  
+    background-size:cover;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+  }
+  .profile-lower{
+    width:100%;
+    height: 70%;  
+    background-color: #aaa1a0;
+    
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .profile-lower .musician-name{
+    width: 17%;
+    height: 20%;
+    margin-top: 60px;
+  }
+  
+  .profile-lower .musician-brief-introduction{
+    width: 86%;
+    height: 30%;  
+  }
+  
+  .item2 .profile-upper{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/583/107/670/2016-adele-photoshoot-vogue-wallpaper-preview.jpg");
+    background-position: right -150px bottom -180px;
+  }
+  
+  .item3 .profile-upper{
+    width:100%;
+    height: 30%;
+    background-image: url("https://wallpaper.dog/large/996020.jpg");
+  background-position: right -250px bottom -250px;
+  border-top-left-radius:  20px;
+  border-top-right-radius: 20px;
+   -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+  .item3 .profile-upper .picture{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: pink;
+    background-image: url(https://d1nslcd7m2225b.cloudfront.net/Pictures/480xAny/8/2/4/1229824_Oasis.jpg);
+    background-position: right -30px top -0px;  
+    background-size:cover;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+  }
+  
+  .item4 .profile-upper{
+    width:100%;
+    height: 30%;
+    background-image: url("https://lh3.googleusercontent.com/proxy/NwHrYBVneNS4lNh4TuotEWadCLyxQea8G_pjMsHqsgdSwlxgB8LbfsXOM4S7NMbfMwZi-lyr1Tg6mLKvvm2hBf0PhR-u");
+  background-position: right -0px bottom -150px;
+  border-top-left-radius:  20px;
+  border-top-right-radius: 20px;
+   -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+  .item4 .profile-upper .picture{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: pink;
+    background-image: url(https://vistapointe.net/images/coldplay-10.jpg);
+    background-position: right -18px top 2px;  
+    background-size:cover;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+  }
+  
+  .item5 .profile-upper{
+      background-image: url(https://www.theplace2.ru/cache/archive/amy_winehouse/img/15-41-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg);
+      background-position: right -300px bottom 350px;
+  }
+  
+  .item5 .profile-upper .picture{
+    background-image: url(https://swall.teahub.io/photos/small/162-1622956_amy-winehouse-wallpaper-iphone.jpg);
+    background-position: right -18px top 2px;  
+  }
+  
+  .item6 .profile-upper{
+      background-image: url(https://wallpaperaccess.com/full/5474402.jpg);
+  background-size: cover;
+  background-position: right -00px bottom -370px;
+  }
+  
+  .item6 .profile-upper .picture{
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0OIdUbcGpX1wnneG4_EZMxEZS_IuCWdxMiQ&usqp=CAU);
+    background-position: right -30px top 5px;  
+  }
+  
+  .item7 .profile-upper{
+    background-image: url(https://wallpaperaccess.com/full/1339056.jpg);
+  background-size: cover;
+  background-position: right -00px bottom -380px;
+  }
+  
+  .item7 .profile-upper .picture{
+    background-image: url(https://7wallpapers.net/wp-content/uploads/5_Queen.jpg);
+    background-position: right -30px top 5px;  
+  }
+
+  /*nav*/
+
+  a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 50%;
+    left:100%;
+    animation-fill-mode: forwards;
+}
+nav{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    border-right: 5px solid black;
+    animation-fill-mode: forwards;    
+}
+nav.open{
+    animation: 0.5s open-nav;
+    animation-fill-mode: forwards;
+}
+nav.close{
+    animation: 0.5s close-nav;
+    animation-fill-mode: forwards;
+}  
+nav ul{
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+
+nav li{
+    padding-top: 20px;
+}
+nav li a:hover{
+    animation: 0.3s menu-line;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menu-line{
+    from{
+      border-bottom: 0px solid black;
+      
+    }
+    to{
+      border-bottom: 3px solid black;
+    }
+  }
+
+  @keyframes close-nav{
+      from{
+        width:15%;
+      }
+      to{
+          width: 0%;
+      }
+  }
+  @keyframes open-nav{
+    from{
+        width: 0%;
+    }
+    to{
+        width:15%;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6070ff; 
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.menu-btn{
+    z-index: 90;
+}
