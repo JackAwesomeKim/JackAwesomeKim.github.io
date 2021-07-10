@@ -74,8 +74,9 @@ a{
   }
   
   .profile-info ul{
+    height:150px;
     list-style-type: none;
-    animation: 1s dashed-border 1s;
+    animation: 2s dashed-border 1s;
     animation-fill-mode: forwards;
   }
   

@@ -161,6 +161,19 @@ html, body{
     background-position: right -150px bottom -180px;
   }
   
+  .item2 .profile-upper .picture{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: pink;
+    background-image: url("https://wallpapers.im/files/preview/768x1280/11621588918g5zgwhtaw159przexos0dnm9ozat0rh6yyosgrxnhmoemscepgbmpri6wuyxqj2hb1emfxjybq8gklqplxearkhnonzggdcjiakv.jpg");
+    background-position: right 0px top -0px;  
+    background-size:cover;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+  }
+
   .item3 .profile-upper{
     width:100%;
     height: 30%;
@@ -187,8 +200,8 @@ html, body{
   .item4 .profile-upper{
     width:100%;
     height: 30%;
-    background-image: url("https://lh3.googleusercontent.com/proxy/NwHrYBVneNS4lNh4TuotEWadCLyxQea8G_pjMsHqsgdSwlxgB8LbfsXOM4S7NMbfMwZi-lyr1Tg6mLKvvm2hBf0PhR-u");
-  background-position: right -0px bottom -150px;
+    background-image: url("https://i.pinimg.com/originals/e7/71/17/e771171bae24a044bcdeb2b2b3231f75.jpg");
+  background-position: right -160px bottom 450px;
   border-top-left-radius:  20px;
   border-top-right-radius: 20px;
    -webkit-backdrop-filter: blur(5px);

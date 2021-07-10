@@ -11,14 +11,20 @@ let counter = 1;
 
 for (let j = 0; j < profile_info_list.length; j++) {
     for (let i = 0; i < profile_info_list[j].length; i++) {
-        seconds.push(counter + 0.05 * i);
-        if (i == profile_info_list[j].length - 1) { counter += 0.05 * i }
+        seconds.push(counter + 0.1 * i);
+        if (i == profile_info_list[j].length - 1) { counter += 0.1 * i }
     }
 }
 
+
 for (let j = 0; j < profile_info_list.length; j++) {
+    let letterCount = 0;
+    for(let k = 0;k < j ;k++){
+        letterCount += profile_info_list[k].length;
+    }
+
     for (let i = 0; i < profile_info_list[j].length; i++) {
-        setTimeout(setTextmessage, 500 * seconds[i], j, i, profile_info_list[j]);
+        setTimeout(setTextmessage, 500 * seconds[letterCount + i], j, i, profile_info_list[j]);
     }
 }
 
