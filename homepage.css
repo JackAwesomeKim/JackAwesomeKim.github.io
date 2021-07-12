@@ -18,7 +18,7 @@ a{
     height:100%;
   }
   nav{
-    width: 15%;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -29,111 +29,106 @@ a{
     animation-fill-mode: forwards;    
   }
   nav.open{
-      animation: 0.5s open-nav;
-      animation-fill-mode: forwards;
+    animation: 0.5s open-nav;
+    animation-fill-mode: forwards;
 
   }
-  nav.close{
-    animation: 0.5s close-nav;
-    animation-fill-mode: forwards;
+nav.close{
+  animation: 0.5s close-nav;
+  animation-fill-mode: forwards;
 
 }  
-  nav ul{
-    list-style-type: none;
-    padding-right: 30px;
-  }
+nav ul{
+  list-style-type: none;
+  padding-right: 30px;
+}
 
+nav li{
+  padding-top: 20px;
+}
+nav li a:hover{
+  animation: 0.3s menu-line;
+  animation-fill-mode: forwards;
+}
+  
+.introduce{
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
 
-  nav li{
-      padding-top: 20px;
-  }
-  nav li a:hover{
-    animation: 0.3s menu-line;
-    animation-fill-mode: forwards;
-  }
-  
-  
-  .introduce{
-    width:100%;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .profile{
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .profile-info{
-    display: flex;
-    flex-direction: column;  
-    
-    width: 500px;
-  }
-  
-  .profile-info ul{
-    height:150px;
-    list-style-type: none;
-    animation: 2s dashed-border 1s;
-    animation-fill-mode: forwards;
-  }
-  
-  .profile-info li{
-    padding: 10px;
-  }
-  
-  .jackKim-icon{
-    margin-right: 0px;
-    animation: spacing-image-and-text 1s;
-    animation-fill-mode: forwards;
-  flex-grow: 2;
-  }
+.profile{
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-info{
+  display: flex;
+  flex-direction: column;  
+}
+
+.profile-info ul{
+  width:280px;
+  height:150px;
+  list-style-type: none;
+  animation: 1s dashed-border 1s;
+  animation-fill-mode: forwards;
+}
+
+.profile-info li{
+  padding: 10px;
+}
+
+.jackKim-icon{
+  margin-right: 0px;
+  animation: spacing-image-and-text 1s;
+  animation-fill-mode: forwards;
+}
 
 
   
-  @keyframes spacing-image-and-text{
-    from{
-        margin-right: 0px;
-    }
-    to{
-        margin-right: 300px; 
-    }
+@keyframes spacing-image-and-text{
+  from{
+      margin-right: 0px;
   }
-  
-  @keyframes dashed-border{
-    0%{
-        border-left: 0px dashed black;
-    }
-    100%{
-        border-left: 15px dashed black;
-    }  
+  to{
+      margin-right: 300px; 
   }
-  
-  @keyframes menu-line{
-    from{
-      border-bottom: 0px solid black;
-      
-    }
-    to{
-      border-bottom: 3px solid black;
-    }
-  }
+}
 
-  @keyframes close-nav{
-      from{
-        width:15%;
-      }
-      to{
-          width: 0%;
-      }
+@keyframes dashed-border{
+  0%{
+      border-left: 0px dashed black;
   }
-  @keyframes open-nav{
-    from{
-        width: 0%;
-    }
-    to{
-        width:15%;
-    }
+  100%{
+      border-left: 15px dashed black;
+  }  
+}
+
+@keyframes menu-line{
+  from{
+    border-bottom: 0px solid black;
+  }
+  to{
+    border-bottom: 3px solid black;
+  }
+}
+
+@keyframes close-nav{
+  from{
+    width:200px;
+  }
+  to{
+      width: 0%;
+  }
+}
+@keyframes open-nav{
+  from{
+      width: 0%;
+  }
+  to{
+      width:200px;
+  }
 }
