@@ -1,3 +1,7 @@
+@import url('menu_btn.css');
+@import url('scrollbar.css');
+
+
 html, body{
   margin: 0;
   padding: 0;
@@ -15,6 +19,7 @@ html, body{
 .music-container{
   display: flex;
   flex-direction: row;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   
@@ -24,7 +29,6 @@ html, body{
   background-image: url("https://i.pinimg.com/originals/8d/c7/6e/8dc76e0087a19a78ddd62603ec8b8368.jpg");
   background-repeat: no-repeat;  
 
-  flex-shrink: 0;
 }
   
 .music-container .card{
@@ -37,15 +41,53 @@ html, body{
   
   border-radius: 20px;
   box-shadow: 3px 2px 28px 8px rgba(0,0,0,0.75);
-
 }
-
-
 
 .card:hover{
   z-index : 9;
 }
 
+.profile-upper{
+  width:100%;
+  height: 30%;
+  border-top-left-radius:  20px;
+  border-top-right-radius: 20px;
+}
+.profile-upper .picture{
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background-color: pink;
+  background-size:cover;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+.profile-lower{
+  width:100%;
+  height: 70%;  
+  background-color: #aaa1a0;
+  
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+  
+.profile-lower .musician-name{
+  width: 17%;
+  height: 20%;
+  margin-top: 60px;
+}
+  
+.profile-lower .musician-brief-introduction{
+  width: 86%;
+  height: 30%;  
+}
+  
 .item1{
   top: 50px;
   left:50px;
@@ -82,115 +124,43 @@ html, body{
   transform: rotate(-40deg);  
 }
 
-.profile-upper{
-  width:100%;
-  height: 30%;
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg");
+.item1 .profile-upper{
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg);
   background-position: right 0px bottom -40px;
-  border-top-left-radius:  20px;
-  border-top-right-radius: 20px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
 }
-.profile-upper .picture{
-  width: 90px;
-  height: 90px;
-  border-radius: 100%;
-  background-color: pink;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDY7iIStOo3J7i4nbLBOOsYXK2i7vVdHShMQ&usqp=CAU");
+  
+.item1 .profile-upper .picture{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDY7iIStOo3J7i4nbLBOOsYXK2i7vVdHShMQ&usqp=CAU);
   background-position: right 0px top -20px;  
-  background-size:cover;
-  position: absolute;
-  top: 65%;
-  left: 35%;
 }
-.profile-lower{
-  width:100%;
-  height: 70%;  
-  background-color: #aaa1a0;
-  
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
 
-  align-items: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-  
-.profile-lower .musician-name{
-  width: 17%;
-  height: 20%;
-  margin-top: 60px;
-}
-  
-.profile-lower .musician-brief-introduction{
-  width: 86%;
-  height: 30%;  
-}
-  
 .item2 .profile-upper{
-  background-image: url("https://c4.wallpaperflare.com/wallpaper/583/107/670/2016-adele-photoshoot-vogue-wallpaper-preview.jpg");
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/583/107/670/2016-adele-photoshoot-vogue-wallpaper-preview.jpg);
   background-position: right -150px bottom -180px;
 }
   
 .item2 .profile-upper .picture{
-  width: 90px;
-  height: 90px;
-  border-radius: 100%;
-  background-color: pink;
-  background-image: url("https://wallpapers.im/files/preview/768x1280/11621588918g5zgwhtaw159przexos0dnm9ozat0rh6yyosgrxnhmoemscepgbmpri6wuyxqj2hb1emfxjybq8gklqplxearkhnonzggdcjiakv.jpg");
+  background-image: url(https://wallpapers.im/files/preview/768x1280/11621588918g5zgwhtaw159przexos0dnm9ozat0rh6yyosgrxnhmoemscepgbmpri6wuyxqj2hb1emfxjybq8gklqplxearkhnonzggdcjiakv.jpg);
   background-position: right 0px top -0px;  
-  background-size:cover;
-  position: absolute;
-  top: 65%;
-  left: 35%;
 }
 
 .item3 .profile-upper{
-  width:100%;
-  height: 30%;
-  background-image: url("https://wallpaper.dog/large/996020.jpg");
+  background-image: url(https://wallpaper.dog/large/996020.jpg);
   background-position: right -250px bottom -250px;
-  border-top-left-radius:  20px;
-  border-top-right-radius: 20px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+
 }
 .item3 .profile-upper .picture{
-  width: 90px;
-  height: 90px;
-  border-radius: 100%;
-  background-color: pink;
   background-image: url(https://d1nslcd7m2225b.cloudfront.net/Pictures/480xAny/8/2/4/1229824_Oasis.jpg);
   background-position: right -30px top -0px;  
-  background-size:cover;
-  position: absolute;
-  top: 65%;
-  left: 35%;
 }
   
 .item4 .profile-upper{
-  width:100%;
-  height: 30%;
-  background-image: url("https://i.pinimg.com/originals/e7/71/17/e771171bae24a044bcdeb2b2b3231f75.jpg");
+  background-image: url(https://i.pinimg.com/originals/e7/71/17/e771171bae24a044bcdeb2b2b3231f75.jpg);
   background-position: right -160px bottom 450px;
-  border-top-left-radius:  20px;
-  border-top-right-radius: 20px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
 }
 .item4 .profile-upper .picture{
-  width: 90px;
-  height: 90px;
-  border-radius: 100%;
-  background-color: pink;
   background-image: url(https://vistapointe.net/images/coldplay-10.jpg);
   background-position: right -18px top 2px;  
-  background-size:cover;
-  position: absolute;
-  top: 65%;
-  left: 35%;
 }
   
 .item5 .profile-upper{
@@ -216,8 +186,7 @@ html, body{
   
 .item7 .profile-upper{
   background-image: url(https://wallpaperaccess.com/full/1339056.jpg);
-  background-size: cover;
-  background-position: right -00px bottom -380px;
+  background-position: right -0px bottom -380px;
 }
   
 .item7 .profile-upper .picture{
@@ -225,8 +194,7 @@ html, body{
   background-position: right -30px top 5px;  
 }
 
-  /*nav*/
-
+/***************nav***************/
 a{
     text-decoration: none;
     color: black;
@@ -239,15 +207,17 @@ a{
     animation-fill-mode: forwards;
 }
 nav{
-    flex-shrink: 0;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    position: relative;
-    border-right: 5px solid black;
-    animation-fill-mode: forwards;    
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-content: center;
+  justify-content: center;
+
+  position: relative;
+  border-right: 5px solid black;
+
+  animation-fill-mode: forwards;    
 }
 nav.open{
     animation: 0.5s open-nav;
@@ -269,56 +239,4 @@ nav li{
 nav li a:hover{
     animation: 0.3s menu-line;
     animation-fill-mode: forwards;
-}
-
-@keyframes menu-line{
-    from{
-      border-bottom: 0px solid black;
-      
-    }
-    to{
-      border-bottom: 3px solid black;
-    }
-  }
-
-  @keyframes close-nav{
-      from{
-        width:15%;
-      }
-      to{
-          width: 0%;
-      }
-  }
-  @keyframes open-nav{
-    from{
-        width: 0%;
-    }
-    to{
-        width:15%;
-    }
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #6070ff; 
-    border-radius: 20px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
-
-.menu-btn{
-    z-index: 90;
 }

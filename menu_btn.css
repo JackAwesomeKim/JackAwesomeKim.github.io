@@ -1,9 +1,38 @@
 .menu-btn{
+    width: 30px;
+    height:30px;
+
     position: absolute;
     top: 50%;
     left:100%;
-    width: 30px;
-    height:30px;
-    animation-fill-mode: forwards;
 
+    z-index: 90;
+    
+    animation-fill-mode: forwards;
+}
+
+@keyframes menu-line{
+    from{
+        border-bottom: 0px solid black;        
+    }
+    to{
+        border-bottom: 3px solid black;
+    }
+}
+
+@keyframes close-nav{
+    from{
+        width:200px;
+    }
+    to{
+        width: 0%;
+    }
+}
+@keyframes open-nav{
+    from{
+        width: 0%;
+    }
+    to{
+        width:200px;
+    }
 }

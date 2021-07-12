@@ -1,5 +1,5 @@
 @import url('menu_btn.css');
-
+@import url('scrollbar.css');
 
 html,body{
     padding: 0;
@@ -57,88 +57,38 @@ nav li a:hover{
     display:flex;
     flex-direction:row;
     height:100%;
-    width:100%;
     overflow-y: auto;
 }
 
 .content-container{
-display:flex;
-flex-direction:column;
-flex-wrap: nowrap;
-height:100%;
-width:auto;
-background-color: white;
-overflow-y : scroll;
-box-sizing: border-box;
-scroll-behavior: smooth;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    height:100%;
+    width:auto;
+    background-color: white;
+    overflow-y : scroll;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
 .item{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-box-sizing: border-box;
-flex-shrink: 0;
-width:95%;
-height:auto;
-background-color: white;
-margin: 30px;
-padding: 50px;
-border-radius: 30px;
-box-shadow: 0px 0px 5px 6px #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width:95%;
+    height:auto;
+    background-color: white;
+    margin: 30px;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 6px #000000;
 }
 
 .item:hover{
-box-shadow: 0px 0px 10px 6px #000000;  
+    box-shadow: 0px 0px 10px 6px #000000;  
 }
 
-
-  
-@keyframes menu-line{
-    from{
-      border-bottom: 0px solid black;
-      
-    }
-    to{
-      border-bottom: 3px solid black;
-    }
-  }
-
-  @keyframes close-nav{
-      from{
-        width:15%;
-      }
-      to{
-          width: 0%;
-      }
-  }
-  @keyframes open-nav{
-    from{
-        width: 0%;
-    }
-    to{
-        width:15%;
-    }
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #6070ff; 
-    border-radius: 20px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
