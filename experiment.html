@@ -11,7 +11,7 @@
         function loadJSON(callback) {   
             let xobj = new XMLHttpRequest();
                 xobj.overrideMimeType("application/json");
-            xobj.open('GET', 'https://customsearch.googleapis.com/customsearch/v1?cx=420787485d936ab5d&imgSize=LARGE&imgType=photo&num=1&q=amy%20winehouse&searchType=image&start=4', true); // Replace 'my_data' with the path to your file
+            xobj.open('GET', 'https://customsearch.googleapis.com/customsearch/v1?cx=420787485d936ab5d&imgSize=LARGE&imgType=photo&num=1&q=amy%20winehouse&searchType=image&start=4&key=AIzaSyBesJa5URqNfYGps-tmqXR7xVAjVzjKbbQ', true); // Replace 'my_data' with the path to your file
             xobj.onreadystatechange = function () {
                 console.log(`readyState ${xobj.readyState}`);
                 if (xobj.readyState == 4 && xobj.status == "200") {
